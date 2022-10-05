@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragmentList">
+
+    <fragment
+        android:id="@+id/fragmentDetail"
+        android:name="euroapp.sdeaz.presentation.stub.FragmentDetail"
+        android:label="FragmentDetail" >
+        <argument
+            android:name="imgurl"
+            app:argType="string"
+            android:defaultValue=""/>
+        <argument
+            android:name="title"
+            app:argType="string"
+            android:defaultValue="No title" />
+        <argument
+            android:name="description"
+            app:argType="string"
+            android:defaultValue="No description" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentList"
+        android:name="euroapp.sdeaz.presentation.stub.FragmentList"
+        android:label="FragmentList" >
+        <action
+            android:id="@+id/action_fragmentList_to_fragmentDetail"
+            app:destination="@id/fragmentDetail" />
+    </fragment>
+</navigation>

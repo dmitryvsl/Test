@@ -41,8 +41,9 @@
 
     <ProgressBar
         android:id="@+id/progress_circular"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:indeterminateTint="@color/red"/>
+        android:layout_width="82dp"
+        android:layout_height="82dp"
+        android:indeterminateTint="@color/red"
+        />
 
 </LinearLayout>
